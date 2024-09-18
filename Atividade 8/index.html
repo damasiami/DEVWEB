@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tabs Dinâmicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab-button active" data-tab="tab1">Aba 1</button>
+        <button class="tab-button" data-tab="tab2">Aba 2</button>
+        <button class="tab-button" data-tab="tab3">Criar Tarefa</button>
+    </div>
+    <div class="tab-content">
+        <div id="tab1" class="content active">
+            <h2>Conteúdo da Aba 1</h2>
+            <form id="contentForm1">
+                <input type="text" id="contentInput1" placeholder="Digite seu conteúdo" required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <ul id="contentList1"></ul>
+        </div>
+        <div id="tab2" class="content">
+            <h2>Conteúdo da Aba 2</h2>
+            <form id="contentForm2">
+                <input type="text" id="contentInput2" placeholder="Digite seu conteúdo" required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <ul id="contentList2"></ul>
+        </div>
+        <div id="tab3" class="content">
+            <h2>Criar Nova Tarefa</h2>
+            <form id="taskForm">
+                <input type="text" id="taskInput" placeholder="Digite sua tarefa" required>
+                <button type="submit">Adicionar Tarefa</button>
+            </form>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

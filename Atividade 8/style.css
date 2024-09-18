@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Cor de fundo suave */
+    margin: 0;
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #333;
+}
+
+.tab-button {
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+}
+
+.tab-button:nth-child(1) {
+    background-color: #ff5733; /* Vermelho vibrante */
+}
+
+.tab-button:nth-child(2) {
+    background-color: #33c1ff; /* Azul vibrante */
+}
+
+.tab-button:nth-child(3) {
+    background-color: #85e033; /* Verde vibrante */
+}
+
+.tab-button:last-child {
+    margin-right: 0;
+}
+
+.tab-button:hover {
+    opacity: 0.9; /* Diminui a opacidade ao passar o mouse */
+}
+
+.tab-button.active {
+    font-weight: bold;
+    border-bottom: 2px solid white; /* Adiciona uma linha na parte inferior da aba ativa */
+}
+
+.tab-content {
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 0 0 5px 5px;
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.content.active {
+    display: block;
+    opacity: 1;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    background: #ffca28; /* Amarelo vibrante */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #ffb300; /* Amarelo mais escuro */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background: #e1f5fe; /* Azul muito claro */
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para cada aba */
+#tab1 {
+    background: #ffe0e0; /* Vermelho claro */
+}
+
+#tab2 {
+    background: #e0f7fa; /* Azul claro */
+}
+
+#tab3 {
+    background: #e0f2f1; /* Verde claro */
+}
